@@ -4,6 +4,8 @@ import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'; 
 import store, { persistor } from './redux/store'; 
 import Home from './Pages/Home';
+import Signup from "./Pages/Signup";
+
 
 function App() {
   
@@ -14,6 +16,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />}/>
+            <Route path="/signup" element={<Signup />}/>
           </Routes>
         </Router>
       </PersistGate>
