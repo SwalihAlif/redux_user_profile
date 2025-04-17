@@ -9,6 +9,7 @@ import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import AdminHome from "./Pages/AdminHome";
 import AddNewUser from "./Pages/AddNewUser";
+import EditUser from "./Pages/EditUser"; 
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/profile" element={<Profile />}/>
             <Route path="/adminhome" element={<AdminHome />}/>
             <Route path="/addnewuser" element={<AddNewUser />}/>
+            <Route path="/edituser/:userId" element={<EditUser />} />
           </Routes>
         </Router>
       </PersistGate>
