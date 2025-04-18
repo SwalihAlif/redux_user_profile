@@ -9,7 +9,7 @@ import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import AdminHome from "./Pages/AdminHome";
 import AddNewUser from "./Pages/AddNewUser";
-import EditUser from "./Pages/EditUser"; 
+import EditUser from "./Pages/EditUser";  
 
 
 function App() {
