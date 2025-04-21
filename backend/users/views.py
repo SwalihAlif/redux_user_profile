@@ -106,7 +106,7 @@ def UpdateProfile(request, user_id):
     user = get_object_or_404(CustomUser, id=user_id)
 
     if request.user != user:
-        return Response({"error": "You can update your own profile"}, status=status.HTTP_403_FORBIDDEN)
+        return Response({"error": "You can only update your own profile"}, status=status.HTTP_403_FORBIDDEN)
     
     if "profile_image" in request.FILES:
         user.profile_image = request.FILES["profile_image"]
